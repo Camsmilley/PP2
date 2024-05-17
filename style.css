@@ -62,8 +62,10 @@
 .small-ratings i{
   color:#cecece;   
 }
+
 svg{
   font-size: 18px;
+  color: blue;
 }
 
 /* Home.html */
