@@ -19,7 +19,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
           <a class="nav-link" href="home.html">Home</a>
         </li>
@@ -381,7 +381,39 @@
 
 
     </div>
-
+    <footer>
+      <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+        <a><img src="img/logi.png">logo</a>
+        <hr class="light">
+        <p>+639-000-000-000</p>
+        <p>logo@gmail.com</p>
+        <p>123 Street Name</p>
+        <p>City,Province,0000</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Our Hours</h5>
+        <hr class="light">
+        <p>Monday-Sunday 9am - 5pm</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Service Area</h5>
+        <hr class="light">
+        <p>City,Province,0000</p>
+        <p>City,Province,0000</p>
+        <p>City,Province,0000</p>
+        <p>City,Province,0000</p>
+      </div>
+      <div class="col-12">
+        <hr class="light">
+        <h5>2024 &copy; Logo </h5>
+      </div>
+      </div>
+      </div>
+      </footer>
 
 
 
@@ -397,38 +429,6 @@
 
      
     </script>
-    <script>
-      import { Input, Ripple, initMDB } from "mdb-ui-kit";
-
-initMDB({ Input, Ripple });
-
-const searchFocus = document.getElementById('search-focus');
-const keys = [
-  { keyCode: 'AltLeft', isTriggered: false },
-  { keyCode: 'ControlLeft', isTriggered: false },
-];
-
-window.addEventListener('keydown', (e) => {
-  keys.forEach((obj) => {
-    if (obj.keyCode === e.code) {
-      obj.isTriggered = true;
-    }
-  });
-
-  const shortcutTriggered = keys.filter((obj) => obj.isTriggered).length === keys.length;
-
-  if (shortcutTriggered) {
-    searchFocus.focus();
-  }
-});
-
-window.addEventListener('keyup', (e) => {
-  keys.forEach((obj) => {
-    if (obj.keyCode === e.code) {
-      obj.isTriggered = false;
-    }
-  });
-});
-    </script>
+    
   </body>
 </html>
