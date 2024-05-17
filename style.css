@@ -86,12 +86,12 @@ html,body{
   
 }
 
-.navbar-toggler{
+.navbar-toggle{
   border: none;
   font-size: 1.25rem;
 }
 
-.navbar-toggler:focus .btn-close:focus{
+.navbar-toggle:focus .btn-close:focus{
   box-shadow: none;
   outline: none;
 }
@@ -134,7 +134,6 @@ html,body{
   border-radius: 50px;
   text-decoration: none;
   transition: 0.3s background-color;
-  margin-left: 100px;
 }
 
 .login-button:hover{
