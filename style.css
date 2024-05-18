@@ -142,7 +142,6 @@ html,body{
 }
 
 
-
 .carousel-inner img{
   width: 100%;
   height: 100%;
@@ -155,7 +154,7 @@ html,body{
 }
 
 .carousel-caption h1{
-  font-size: 400%;
+  font-size: 500%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
 }
@@ -172,6 +171,7 @@ html,body{
   background-color: #68d2e8;
   border: 1px solid #5ba2ff;
 }
+
 
 .btn-primary:hover{
   background-color: #68d2e8;
@@ -197,23 +197,6 @@ html,body{
   width: 95%;
   margin-top: .3rem;
   margin-bottom: 1rem;
-}
-
-.fa-code{
-  color: #e54d26;
-}
-
-.fa-bold{
-  color: #563d7c;
-}
-
-.fa-css3{
-  color: #2163af;
-}
-
-.fa-code, .fa-bold, .fa-css3{
-  font-size: 4em;
-  margin: 1rem;
 }
 
 .social a{
