@@ -55,7 +55,7 @@
 
 .review-count{
     font-weight:400;
-    margin-bottom:2px;
+    
     font-size:15px !important;
 }
 
@@ -320,3 +320,5 @@ hr.light-100{
     font-size: 2em;
     padding: .7rem;
   }
+
+  
