@@ -14,7 +14,7 @@
   <!-- Navigation -->
   <nav class=" navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#"> <img src="img/logi.png">Logo</a>
+      <a class="navbar-brand" href="#"> <img src="img/logi.png"><em class="text-primary">wave</em><span class="text-warning">Guru</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
         <a class="nav-link" href="instructor.html">Instructors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shop</a>
+        <a class="nav-link" href="shop.html">Shop</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="safety.html">Safety</a>
@@ -44,33 +44,54 @@
           
 
 <!-- Image Slider -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/surfing-ufbtbg8ygpasle68.jpg">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="display-2">It's Time for New Adventure</h1>
-        <h3>Book Now!</h3>
-        <button type="button" class="btn btn-outline-light btn-lg">View Instructor</button>
-        <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-target="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ul> -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="img/surfing-ufbtbg8ygpasle68.jpg">
+        <div class="carousel-caption">
+          <h1 class="display-2">It's Time for New Adventure</h1>
+          <h3>Book Now!</h3>
+          <button type="button" class="btn btn-outline-light btn-lg">View Instructor</button>
+          <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/sur.webp">
+        <div class="carousel-caption">
+          <h1 class="display-2">It's Time for New Adventure</h1>
+          <h3>Book Now!</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/image.jpeg">
+        <div class="carousel-caption">
+          <h1 class="display-2">It's Time for New Adventure</h1>
+          <h3>Book Now!</h3>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="img/instruc.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="img/surfer.jpeg">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</div>
-
-
-
+ 
 
 <!-- Jumbotron -->
 <div class="container">
@@ -86,7 +107,7 @@
 </div>
 
 <!-- welcome Section -->
-<div class="container-fluid padding">
+<div class="container padding">
   <div class="row welcome text-center">
     <div class="col-12">
       <h1 class="display-4">Details Bio & Surfing Experience</h1>
@@ -100,7 +121,7 @@
 </div>
 
 <!-- Three Column Section -->
-<div class="container-fluid padding">
+<div class="container padding">
   <div class="row text-center padding">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <img src="img/certification.png" alt="">
@@ -121,7 +142,7 @@
 </div>
 
 <!-- Two Column Section -->
-<div class="container-fluid padding">
+<div class="container padding">
   <div class="row padding">
     <div class="col-md-12 col-lg-6">
       <h2>If you Book Now!</h2>
@@ -148,8 +169,8 @@
   </div>
 </figure>
 
-<!-- Meet the Team -->
-<div class="container-fluid padding">
+<!-- Card-->
+<div class="container padding">
   <div class="row welcome text-center">
     <div class="col-12">
       <h1 class="display-4">Type of Lesson offered</h1>
@@ -159,7 +180,7 @@
 </div>
 
 <!-- Cards -->
-<div class="container-fluid padding">
+<div class="container padding">
   <div class="row padding">
     <div class="col-md-4">
       <div class="card">
@@ -194,67 +215,67 @@
           </div>
         </div>
 
+ <!-- Cards --> 
 
-        <div class="container-fluid padding">
-          <div class="row text-center padding">
+        <div class="container padding">
+          <div class="row text-start padding">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <img src="img/review.png" alt="">
+              <img src="img/budget_5230069 (4).png" alt="">
               <h3>Pricing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, incidunt!</p>
               <a href="#" class="btn btn-primary">See More</a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <img src="img/review.png" alt="">
+              <img src="img/schedule_3652191 (1).png" alt="">
               <h3>Availability Calendar</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, incidunt!</p>
               <a href="#" class="btn btn-primary">See More</a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <img src="img/review.png" alt="">
+              <img src="img/customer-review_5230294.png" alt="">
               <h3>Reviews</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, incidunt!</p>
               <a href="#" class="btn btn-primary">See More</a>
             </div>
           </div>
         </div>
-        
+        <hr>
 
- <!-- Cards -->
- <div class="container-fluid padding">
-  <div class="row padding">
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-imd-top" src="img/instruc.jpg">
-        <div class="card-body">
-          <h4 class="card-title">User Review & Ratings</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam!</p>
-            <a href="#" class="btn btn-primary">See More</a>
-          </div>
-      </div>
+         <!-- Cards --> 
+
+    
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4">Review & Recommendation</h1>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-imd-top" src="img/intermediate.jpg">
-        <div class="card-body">
-          <h4 class="card-title">Review Submission Form</h4>
-          <p class="card-text">ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam!</p>
-            <a href="#" class="btn btn-primary">See More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-imd-top" src="img/intermediate.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Suggestion & Recommendation</h4>
-            <p class="card-text">ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam!</p>
+    <hr>
+  </div>
+</div>
+         <div class="container  padding">
+          <div class="row text-start padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="img/rating_5072610.png" alt="">
+              <h3>User Review & Ratings</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, incidunt!</p>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="img/online_12565920.png" alt="">
+              <h3>Review Submission Form</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, incidunt!</p>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="img/best-seller_4454338.png" alt="">
+              <h3>Suggestion & Recommendation</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, incidunt!</p>
               <a href="#" class="btn btn-primary">See More</a>
             </div>
           </div>
         </div>
-    </div>
-  </div>
-
+        <hr>
+        
 
   <!-- Connect -->
 
@@ -300,7 +321,7 @@
 </div>
 <div class="col-12">
   <hr class="light">
-  <h5><a href="contactus.html">Contact Us </a> -- 2024 &copy; Logo</h5>
+  <h5>2024 &copy; Logo</h5>
 </div>
 </div>
 </div>
