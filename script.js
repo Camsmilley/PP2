@@ -1,4 +1,4 @@
-const url = 'https://randomuser.me/api/';
+const url = 'https://reqres.in/api/users?page=2';
 
 
 let list;
@@ -7,15 +7,15 @@ let all = document.getElementById('all');
 fetch(url).then( response => response.json())
 .then (response =>{
   console.log(response) // array
-  list = response.results;
+  list = response.data;
   list.forEach((item) => {
 
     all.innerHTML += `<div class="col-md-4">
 <div class="card">
 <div class="img1"><img src="img/marama1.jpg" alt=""></div>
-<div class="img2"><img src=${item.picture.large} alt=""></div>
+<div class="img2"><img src=${item.avatar} alt=""></div>
 <div class="card-body">
-  <h5 class="card-tittle intructor-name">${item.name.first} ${item.name.last} </h5>
+  <h5 class="card-tittle intructor-name">${item.first_name} ${item.last_name} </h5>
   <p class="card-text text-muted"><span class="text-muted">aka.</span> marama</p>
   <p class="card-text mt-0" >Surfing competation Champion, cam communicate to any one, and trusted.</p>
   <div class="d-flex justify-content-between align-items-center">
@@ -47,3 +47,5 @@ fetch(url).then( response => response.json())
  
 }
 )
+
+

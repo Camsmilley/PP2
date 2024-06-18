@@ -35,6 +35,9 @@ body{
   align-items: center;
   justify-content: center;
 }
+.wrapper .title a{
+ text-decoration: none;
+}
 .wrapper form{
   padding: 30px 25px 25px 25px;
 }
