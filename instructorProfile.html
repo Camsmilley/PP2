@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -51,13 +54,13 @@
             <div class="card">
               <div class="rounded-top text-white d-flex flex-row" style="background-image:url(img/marama1.jpg); height:200px;">
                 <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
-                  <img src="img/marama.jpg"
+                  <img src="" id="profileImage"
                     alt="Generic placeholder image" class="img-fluid img-thumbnail rounded-circle mt-4 mb-2"
                     style="width: 150px; z-index: 1">
                  
                 </div>
                 <div class="ms-3" style="margin-top: 130px;">
-                  <h5>Marama Tokong</h5>
+                  <h5 id="instructorName">  </h5>
                   <p>General Luna SDN</p>
                 </div>
               </div>
@@ -279,6 +282,17 @@
 
      
     </script>
-    
+    <script >
+const urlParams = new URLSearchParams(window.location.search);
+    const avatarUrl = urlParams.get('avatar');
+
+    const instructorFirstName = urlParams.get('firstName');
+    const instructorLastName = urlParams.get('lastName');
+
+    document.getElementById('profileImage').src = avatarUrl; 
+    document.getElementById('instructorName').textContent = `${instructorFirstName} ${instructorLastName}`;
+  </script>
+
+    </script>
   </body>
 </html>
