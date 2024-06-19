@@ -39,7 +39,7 @@ fetch(url).then( response => response.json())
 </svg>
 </p>
 
-<a href="instructorProfile.html" class="btn btn-primary"><i class="bi bi-person-circle me-2"></i> View Profile</a>
+<a href="instructorProfile.html?avatar=${item.avatar}&firstName=${item.first_name}&lastName=${item.last_name}" class="btn btn-primary" id="viewProfileBtn"><i class="bi bi-person-circle me-2"></i> View Profile</a>
   </div> 
 </div>
 </div>`
